@@ -32,11 +32,8 @@ Developed as part of the **CodTech Front-End Internship**.
 
 ---
 
-## 🚀 Live Demo
-
-👉 [Click here to try the quiz]
-(https://github.com/muzeeb-code/INTERACTIVE-QUIZ-APPLICATION.git)
-
+## 🚀 Live Demo  
+👉 [Click here to try the quiz](https://muzeeb-code.github.io/INTERACTIVE-QUIZ-APPLICATION/)
 ---
 
 ## 📩 Contact
