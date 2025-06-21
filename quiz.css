@@ -1,0 +1,145 @@
+/* -----------------------------------------
+   General Reset and Base Styles
+------------------------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+
+  /* Center everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* -----------------------------------------
+   Main Quiz Container Styling
+------------------------------------------ */
+.quiz-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Question Text */
+.quiz-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* -----------------------------------------
+   Option Button Styling
+------------------------------------------ */
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #000; /* Ensure visible black text */
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+.option-btn:hover {
+  background-color: #d0d0d0;
+}
+
+/* Correct Answer Style */
+.option-btn.correct {
+  background-color: #4caf50; /* Green */
+  color: #ffffff;            /* White text */
+}
+
+/* Wrong Answer Style */
+.option-btn.wrong {
+  background-color: #f44336; /* Red */
+  color: #ffffff;            /* White text */
+}
+
+/* -----------------------------------------
+   Next Button Styling
+------------------------------------------ */
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+/* -----------------------------------------
+   Score and Timer Display
+------------------------------------------ */
+#score {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* -----------------------------------------
+   Responsive Design: Tablets and Phones
+------------------------------------------ */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 1.5rem;
+  }
+
+  .quiz-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .option-btn,
+  button {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  #score {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 1rem;
+  }
+
+  .quiz-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .option-btn,
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  #score {
+    font-size: 0.9rem;
+  }
+}

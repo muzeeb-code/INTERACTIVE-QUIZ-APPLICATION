@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags for Charset and Responsive Layout -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title -->
+  <title>Responsive Quiz App</title>
+
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <!-- Main Quiz Container -->
+  <div class="quiz-container" id="quiz-container">
+    
+    <!-- Question Text -->
+    <h2 id="question">Loading question...</h2>
+
+    <!-- Options (Dynamically Injected) -->
+    <div id="options"></div>
+
+    <!-- Next Button to Move to Next Question -->
+    <button onclick="nextQuestion()" id="next-btn">Next</button>
+
+    <!-- Score and Countdown Timer -->
+    <p id="score">Score: 0 | Time left: 10s</p>
+  </div>
+
+  <!-- Link to External JavaScript -->
+  <script src="quiz.js"></script>
+</body>
+</html>
